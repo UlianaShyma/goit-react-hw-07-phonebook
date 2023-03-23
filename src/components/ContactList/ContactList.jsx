@@ -7,8 +7,6 @@ import {
   selectContactsError,
   selectFilteredContacts,
 } from '../../redux/selectors';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { Loader } from 'components/Loader/Loader';
 
 export const ContactList = () => {
@@ -45,7 +43,6 @@ export const ContactList = () => {
           ))}
         </List>
       )}
-      <ToastContainer autoClose={2500}></ToastContainer>
     </>
   );
 };
